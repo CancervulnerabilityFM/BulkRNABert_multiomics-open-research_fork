@@ -1,0 +1,4 @@
+Tool,Embedding type,Dimension,Output,Method,Time,Peak GPU VRAM
+BulkRNABert,Static gene,200,"19,062 gene embeddings",Checkpoint gene_embedding lookup,0.002956 s,N/A (CPU)
+BulkRNABert,Contextual gene,256,"1 × 19,062 contextual gene embeddings",Final transformer layer (embeddings_4),23.144672 s,N/A (CPU)
+BulkRNABert,Sample,256,1 sample embedding,Mean pooling across contextual gene embeddings,0.029078 s,N/A (CPU)
